@@ -7,7 +7,7 @@ import { AppRoutes } from "./routes";
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { LibraryComponent } from './library/library.component';
+import { LibraryComponent } from './catalog/catalog.component';
 
 @NgModule({
   declarations: [

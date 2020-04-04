@@ -1,6 +1,6 @@
 import { Routes } from "@angular/router";
 
-import { LibraryComponent } from "./library/library.component"
+import { LibraryComponent } from "./catalog/catalog.component"
 import { LoginComponent } from "./login/login.component"
 
 const AppRoutes : Routes = 

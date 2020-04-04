@@ -1,14 +1,17 @@
-<div class="user-form">
-  Welcome New User 
+<div class="main">
+  <h1>Welcome New User! </h1>
+
+<div class="newuser">
   <form #loginform="ngForm" (ngSubmit)="login(loginform)">
     <p>
-      <input type="text" ngModel #username="ngModel" name="username" placeholder="Username" required/>
+      <input type="text" ngModel #username="ngModel" name="username" placeholder="New Username" required/>
       <span *ngIf="username.invalid">Username Invalid</span>
     </p>
     <p>
-      <input type="password" ngModel #password="ngModel" name="password"  placeholder="Password" required />
+      <input type="password" ngModel #password="ngModel" name="password"  placeholder="New Password" required />
       <span *ngIf="password.invalid">Password Invalid</span>
     </p>
     <button [disabled]="loginform.invalid" type="submit">Save Account</button>
   </form>
+</div>
 </div>
