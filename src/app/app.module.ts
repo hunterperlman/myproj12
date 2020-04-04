@@ -6,16 +6,12 @@ import { RouterModule } from "@angular/router";
 import { AppRoutes } from "./routes";
 
 import { AppComponent } from './app.component';
-import { AdminComponent } from './admin/admin.component';
-import { WrapperComponent } from './wrapper/wrapper.component';
 import { LoginComponent } from './login/login.component';
 import { LibraryComponent } from './library/library.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminComponent,
-    WrapperComponent,
     LoginComponent,
     LibraryComponent
   ],

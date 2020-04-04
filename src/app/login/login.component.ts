@@ -6,16 +6,15 @@ import { Router } from "@angular/router"
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
-
+export class LoginComponent implements OnInit 
+{
+  // creates router object
   constructor(private router : Router) { }
-
-  ngOnInit(): void {
-  }
-
+  
   login(form)
-    {
+  {
       this.router.navigate(["/library"]);
-    }
-
+  }
+    
+  ngOnInit(): void {}
 }

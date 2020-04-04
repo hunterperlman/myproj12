@@ -6,7 +6,7 @@ import { Subject } from 'rxjs';
 })
 export class UserInfoService {
 
-  list : any= [];
+  private list : any= [];
 
   listObserve = new Subject<[]>();
 
@@ -14,7 +14,7 @@ export class UserInfoService {
 
   add(user)
     {
-      this.list.push(user);
+      this.list.push({...user})
       this.listObserve.next(this.list);
     }
 
